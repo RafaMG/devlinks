@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-image: url("./assets/bg-mobile.jpg");
+  --switch-icon: url("./assets/moon-stars.svg");
+  --text-color-dark-mode: #FFF;
+  --stroke-color-dark-mode: rgba(255, 255, 255, 0.5);
+  --surface-color-dark-mode: rgba(255, 255, 255, 0.1);
+  --surface-color-dark-mode-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color-dark-mode: rgba(255, 255, 255, 0.2);
+}
+
+.light {
+  --background-image: url("./assets/bg-mobile-light.jpg");
+  --switch-icon: url("./assets/sun.svg");
+  --text-color-dark-mode: #000;
+  --stroke-color-dark-mode: rgba(0, 0, 0, 0.5);
+  --surface-color-dark-mode: rgba(0, 0, 0, 0.1);
+  --surface-color-dark-mode-hover: rgba(0, 0, 0, 0.05);
+  --highlight-color-dark-mode: rgba(0, 0, 0, 0.2);
+}
+
+body { 
+  background: var(--background-image) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color-dark-mode);
+}
+
+#container {
+  width: 320px; 
+  margin: 56px auto 0px;
+
+  /* border: 1px solid blue; */
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+}
+
+#switch {
+  width: 64px;
+  position: relative;
+  margin: 4px auto; /* Está fazendo o alinhamento central do switch. */
+
+  /* border: 1px solid red; */
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: #FFF var(--switch-icon) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  /* Essas instruções define que o botão fique na camada 1. */
+  position: absolute;
+  z-index: 1;
+
+  /* Essas instruções fazem com que o button e o span se alinhei ao centro. */
+  top: 50%;
+  transform: translateY(-50%);
+
+  left: 0;
+}
+
+.light #switch button {
+  left: initial;
+  right: 0;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color-dark-mode);
+  border: 1px solid var(--stroke-color-dark-mode);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+#links ul {
+  list-style: none;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  
+  /* border: 1px solid green; */
+}
+
+#links li a {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 16px 24px;
+  background: var(--surface-color-dark-mode);
+
+  border: 1px solid var(--stroke-color-dark-mode);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.2s;
+}
+
+#links li a:hover {
+  background: var(--surface-color-dark-mode-hover);
+  border: 1.5px solid var(--text-color-dark-mode);
+}
+
+#social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 24px;
+  padding: 24px;
+
+  /* border: 1px solid red; */
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: var(--highlight-color-dark-mode);
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+
+  /* border: 1px solid yellow; */
+}
+
