@@ -80,11 +80,16 @@ body * {
   transform: translateY(-50%);
 
   left: 0;
+
+  animation: slide-back 0.2s;
 }
 
 .light #switch button {
-  left: initial;
-  right: 0;
+  animation: slide-in 0.2s forwards; 
+}
+
+#switch buttoN:hover {
+  outline: 8px solid var(--highlight-color-dark-mode);
 }
 
 #switch span {
@@ -175,3 +180,23 @@ footer {
   }
 }
 
+/* animations */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 50%;
+  } 
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+
+  to {
+    left: 0;
+  }
+}
