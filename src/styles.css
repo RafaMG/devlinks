@@ -11,7 +11,7 @@
   --stroke-color-dark-mode: rgba(255, 255, 255, 0.5);
   --surface-color-dark-mode: rgba(255, 255, 255, 0.1);
   --surface-color-dark-mode-hover: rgba(255, 255, 255, 0.05);
-  --highlight-color-dark-mode: rgba(255, 255, 255, 0.2);
+  --highlight-color-dark-mode: #8c52ff; /*rgba(255, 255, 255, 0.2)*/
 }
 
 .light {
@@ -21,7 +21,7 @@
   --stroke-color-dark-mode: rgba(0, 0, 0, 0.5);
   --surface-color-dark-mode: rgba(0, 0, 0, 0.1);
   --surface-color-dark-mode-hover: rgba(0, 0, 0, 0.05);
-  --highlight-color-dark-mode: rgba(0, 0, 0, 0.2);
+  --highlight-color-dark-mode: #8c52ff; /*rgba(0, 0, 0, 0.2)*/
 }
 
 body { 
@@ -88,7 +88,7 @@ body * {
   animation: slide-in 0.2s forwards; 
 }
 
-#switch buttoN:hover {
+#switch button:hover {
   outline: 8px solid var(--highlight-color-dark-mode);
 }
 
@@ -97,7 +97,7 @@ body * {
   width: 64px;
   height: 24px;
   background: var(--surface-color-dark-mode);
-  border: 1px solid var(--stroke-color-dark-mode);
+  border: 2px solid var(--stroke-color-dark-mode);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
@@ -120,7 +120,7 @@ body * {
   padding: 16px 24px;
   background: var(--surface-color-dark-mode);
 
-  border: 1px solid var(--stroke-color-dark-mode);
+  border: 2px solid var(--stroke-color-dark-mode);
   border-radius: 8px;
 
   backdrop-filter: blur(4px);
@@ -134,7 +134,12 @@ body * {
 
 #links li a:hover {
   background: var(--surface-color-dark-mode-hover);
-  border: 1.5px solid var(--text-color-dark-mode);
+  border: 2px solid #8c52ff; /*var(--text-color-dark-mode)*/
+}
+
+#links ion-icon {
+  font-size: 24px;
+  color: #8c52ff;
 }
 
 #social-links {
@@ -162,11 +167,22 @@ body * {
 }
 
 footer {
-  padding: 24px;
+  padding: 20px;
   text-align: center;
   font-size: 14px;
 
   /* border: 1px solid yellow; */
+}
+
+footer ion-icon {
+  font-size: 14px;
+  color: #8c52ff;
+}
+
+footer a:hover {
+  font-weight: 500;
+  color: #8c52ff;
+  transition: 0.2s;
 }
 
 /* media queries */
