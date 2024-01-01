@@ -41,7 +41,9 @@ body * {
 }
 
 #container {
-  max-width: 484px;
+  width: 600px;
+  margin: 24px;
+  /* max-width: 600px; */
 }
 
 #profile {
@@ -213,3 +215,40 @@ footer a:hover {
   }
 }
 
+.slider-container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  gap: 24px;
+}
+
+.first-slide img {
+  width: 324px;
+  height: 324px;
+
+  margin-top: 96px;
+
+  border-radius: 14px;
+  border: 5px solid var(--highlight-color-dark-mode);
+}
+
+.second-slide img {
+  width: 324px;
+  height: 424px;
+
+  margin-top: 240px;
+
+  border-radius: 14px;
+  border: 5px solid var(--highlight-color-dark-mode);
+}
+
+.third-slide img {
+  width: 324px;
+  height: 324px;
+
+  margin-top: 144px;
+  
+  border-radius: 14px;
+  border: 5px solid var(--highlight-color-dark-mode);
+}
