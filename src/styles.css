@@ -41,9 +41,8 @@ body * {
 }
 
 #container {
-  width: 600px;
+  max-width: 424px;
   margin: 24px;
-  /* max-width: 600px; */
 }
 
 #profile {
