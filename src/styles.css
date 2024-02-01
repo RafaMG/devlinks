@@ -36,12 +36,13 @@ body {
 }
 
 body * {
+  font-size: 1rem;
   font-family: "Inter", sans-serif;
   color: var(--text-color-dark-mode);
 }
 
 #container {
-  max-width: 424px;
+  max-width: 524px;
   margin: 24px;
 }
 
@@ -111,7 +112,7 @@ body * {
   padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 #links li a {
@@ -139,7 +140,7 @@ body * {
 }
 
 #links ion-icon {  
-  font-size: 24px;
+  font-size: 2.5rem;
   color: #8c52ff;
 }
 
@@ -150,12 +151,12 @@ footer {
   gap: 4px;
 
   padding: 20px 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
 }
 
 ion-icon {
-  font-size: 16px;
+  font-size: 1rem;
   color: #8c52ff;
 }
 
@@ -200,37 +201,37 @@ footer a:hover {
 .images-container {
   width: 100%;
   height: 100vh;
-
   display: flex;
-  gap: 24px;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .first-image img {
-  width: 324px;
-  height: 324px;
+  width: 16rem;
+  height: 16rem;
 
-  margin-top: 96px;
+  margin-top: 164px;
 
   border-radius: 14px;
-  border: 5px solid var(--highlight-color-dark-mode);
+  border: 4px solid var(--highlight-color-dark-mode);
 }
 
 .second-image img {
-  width: 324px;
-  height: 424px;
+  width: 16rem;
+  height: 18rem;
 
-  margin-top: 240px;
+  margin-top: 364px;
 
   border-radius: 14px;
-  border: 5px solid var(--highlight-color-dark-mode);
+  border: 4px solid var(--highlight-color-dark-mode);
 }
 
 .third-image img {
-  width: 324px;
-  height: 324px;
+  width: 16rem;
+  height: 16rem;
 
-  margin-top: 144px;
+  margin-top: 264px;
   
   border-radius: 14px;
-  border: 5px solid var(--highlight-color-dark-mode);
+  border: 4px solid var(--highlight-color-dark-mode);
 }
